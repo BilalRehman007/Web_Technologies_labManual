@@ -1,0 +1,47 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background:grey;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.container {
+width: 90%;
+max-width: 450px;
+background: white;
+padding: 20px;
+
+
+display: none;
+flex-direction: column;
+}
+.active {
+display: flex;
+}
+button {
+padding: 12px;
+margin-top: 10px;
+border: none;
+border-radius: 10px;
+background:blue;
+color: white;
+font-size: 16px;
+cursor: pointer;
+}
+.option {
+padding: 12px;
+background:lightgrey;
+border-radius: 8px;
+margin: 8px 0;
+cursor: pointer;
+}
+.correct {
+background: green !important;
+color: white;
+}
+.wrong {
+background: red !important;
+color: white;
+}
