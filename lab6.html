@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .item, .item2 {
+    color: blue;
+    background-color: transparent;
+    text-align: center;
+    list-style: none;
+}
+
+
+.item::before, .item2::before {
+    content: "";
+}
+
+@media (max-width: 600px) {
+    .item:nth-child(1)::before { content: "Lab 1"; }
+    .item:nth-child(2)::before { content: "Lab 2"; }
+    .item:nth-child(3)::before { content: "Lab 3"; }
+    .item:nth-child(4)::before { content: "Lab 4"; }
+    .item:nth-child(5)::before { content: "Lab 5"; }
+    .item2::before { content: "Lab 6"; }
+
+    .item, .item2 {
+        font-size: 20px;
+        color: blue;
+    }
+    .item, .item2 {
+        visibility: hidden;
+    }
+    .item::before, .item2::before {
+        visibility: visible;
+        display: block;
+        color: blue;
+    }
+}
+
+        body{
+            background-color: bisque;
+        }
+        
+        h1{
+            text-align: center;
+            color: darkviolet;
+        }
+        h2{
+            text-align: center;
+            color: grey;
+        }
+        h3{
+            text-align:center;
+        }
+        h4{
+            text-align: center;
+            color: gray;
+        }
+        .container{
+            justify-content: center;
+            display: flex;
+            border: solid green;
+            padding: 15px;
+            margin: auto;
+            flex-direction: column;
+            color: blue;
+            height: auto;
+            text-align: center;
+            gap: 10PX;
+        }
+            .item{
+        flex-direction: column;
+        background-color:lightblue;
+        gap: 20px;
+        align-self: flex-start;
+        align-self: center;
+        
+        }   
+        .item2{
+             flex-direction: column;
+        background-color:lightblue;
+        gap: 20px;
+        text-align: right;
+        align-self: center;
+        }
+       
+#id{background-color: skyblue; color: blue; align-self: flex-end;}
+    </style>
+    
+</head>
+<body>
+    
+<h1>Web Technologies Handout</h1>
+<h2>Course: CSS-336(2+1)</h2>
+<h3>Semester: Fall 2025</h3>
+<h4>Name:Bilal Rehman | Regestration ID FA22-BCE-007</h4>
+
+    
+        <ol class="container">
+            <li class="item">Experiment 1: Intro HTML Basics</li>
+            <li class="item">Experiment 2: Creating and Publishing an Online Lab Manual</li>
+            <li class="item">Experiment 3: Working with Tables,Lists,Images and Hyperlinks</li>
+            <li class="item">Experiment 4: Applying CSS to HTML(inline,Internal and External Style)</li>
+            <li class="item">Experiment 5: Exploring CSS Selectors</li>
+            <li class="item2" id="id">Experiment 6: Web Responsiveness</li>
+        </ol>
+
+   
+
+
+</body>
+</html>
