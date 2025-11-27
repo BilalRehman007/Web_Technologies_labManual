@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Higher-Order Functions and Callbacks Lab</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+
+    <header>
+        <h1>Customization Control Panel</h1>
+    </header>
+
+    <div id="main-display">
+        <p id="display-text">Welcome to the Dynamic Customizer!</p>
+        <div id="status-log">Status: Ready</div>
+    </div>
+
+    <div id="control-panel">
+        <h2>Control Panel</h2>
+
+        <div class="control-group">
+            <h3>Color Changer (Callback 1)</h3>
+            <button onclick="applyAction('color', 'red')">Red</button>
+            <button onclick="applyAction('color', 'blue')">Blue</button>
+            <button onclick="applyAction('color', 'green')">Green</button>
+        </div>
+
+        <div class="control-group">
+            <h3>Text Transformer (Callback 2)</h3>
+            <button onclick="applyAction('text', 'uppercase')">UPPERCASE</button>
+            <button onclick="applyAction('text', 'lowercase')">lowercase</button>
+            <button onclick="applyAction('text', 'reset')">Reset Text</button>
+        </div>
+
+        <div class="control-group">
+            <h3>Higher-Order Function Demo</h3>
+            <button onclick="runHigherOrderDemo()">Execute HOF</button>
+        </div>
+    </div>
+
+    <script src="script9.js"></script>
+</body>
+</html>
